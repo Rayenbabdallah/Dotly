@@ -1,0 +1,25 @@
+{
+  "name": "dotly-mobile-monorepo",
+  "version": "1.0.0",
+  "description": "Dotly React Native mobile apps for staff and customers",
+  "private": true,
+  "workspaces": [
+    "shared/core",
+    "apps/staff",
+    "apps/customer"
+  ],
+  "scripts": {
+    "setup": "npm install && npm run build:shared",
+    "build:shared": "cd shared/core && npm run build",
+    "staff:ios": "cd apps/staff && npm run ios",
+    "staff:android": "cd apps/staff && npm run android",
+    "staff:web": "cd apps/staff && npm run web",
+    "customer:ios": "cd apps/customer && npm run ios",
+    "customer:android": "cd apps/customer && npm run android",
+    "customer:web": "cd apps/customer && npm run web"
+  },
+  "devDependencies": {
+    "@react-native-community/cli": "^11.0.0",
+    "@react-native/metro-config": "^0.72.0"
+  }
+}

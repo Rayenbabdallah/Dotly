@@ -1,0 +1,20 @@
+{
+  "name": "@dotly/core",
+  "version": "1.0.0",
+  "description": "Shared core library for Dotly mobile apps",
+  "main": "lib/index.ts",
+  "types": "lib/index.d.ts",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
